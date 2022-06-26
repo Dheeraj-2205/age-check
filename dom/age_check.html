@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter the age <input id = "age"></p>
+    <button onclick="eighteen()" >submit </button>
+    <div id = result>
+        
+    </div>
+    
+    
+
+
+</body>
+</html>
+<Script>
+    function eighteen(){
+       var i = document.getElementById("age").value
+       var result = document.getElementById("result")
+       result.innerHTML = "";
+       var p = document.createElement  ("p") 
+       if(i > 18){
+         
+         p.textContent= "You can drive in India!"
+
+       }else if(i < 18){
+         p.textContent = "You can't drive in India!"
+       }if(i == 18){
+        p.textContent = "You are just old enough to drive in India!"
+       }
+       result.appendChild(p);
+    }
+</Script>
